@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه جم‌های بازی</title>
+    <link rel="stylesheet" href="{% static "css/mainpage.css" %}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">جوک‌جم</div>
+        <nav>
+            <a href="#">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="#">ویژگی‌ها</a>
+            <a href="#">تماس با ما</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('{% static "img/banner.jpg" %}');">
+        <div class="overlay"></div>
+        <div class="bluring">
+            <h1>برترین جم‌ها، در سریع‌ترین زمان</h1>
+            <p>برای تجربه‌ای بی‌نظیر در بازی‌ها، جم‌های موردنیاز خود را از ما بخرید.</p>
+            <a href="#" class="cta">همین حالا شروع کنید</a>
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <h3>تحویل سریع</h3>
+            <p>سریع‌ترین زمان ارسال، فقط با ما!</p>
+        </div>
+        <div class="feature">
+            <h3>امنیت پرداخت</h3>
+            <p>با خیال راحت پرداخت کنید، امنیت شما اولویت ماست.</p>
+        </div>
+        <div class="feature">
+            <h3>تمامی پلتفرم ها</h3>
+            <p>فعالیت در پلتفرم تمامی پلتفرم ها</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>محصولات ویژه</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="product1.jpg" alt="جم 1000">
+                <h3>جم 1000</h3>
+                <p class="price">500,000 تومان</p>
+                <a href="#" class="buy-btn">خرید</a>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="جم 2000">
+                <h3>جم 2000</h3>
+                <p class="price">900,000 تومان</p>
+                <a href="#" class="buy-btn">خرید</a>
+            </div>
+            <div class="product">
+                <img src="product3.jpg" alt="جم 5000">
+                <h3>جم 5000</h3>
+                <p class="price">1,500,000 تومان</p>
+                <a href="#" class="buy-btn">خرید</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 جم‌مارکت. تمامی حقوق محفوظ است.</p>
+        <div class="social-icons">
+            <a href="{% url 'mainpage' %}">🌐</a>
+            <a href="#">📸</a>
+            <a href="https://t.me/UndrDsk0M" target="_blank">💬</a>
+        </div>
+    </footer>
+
+</body>
+</html>
